@@ -3,6 +3,7 @@ import './globals.scss';
 import type { Metadata } from 'next';
 import { Lato, Open_Sans, Roboto } from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 const lato = Lato({
   subsets: ['latin'],
@@ -39,6 +40,7 @@ export default function RootLayout({
     >
       <body>{children}</body>
       <SpeedInsights />
+      <Analytics />
     </html>
   );
 }

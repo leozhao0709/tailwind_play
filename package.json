@@ -71,6 +71,7 @@
     "webpack-merge": "^5.10.0"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
     "clsx": "^2.1.0",
     "dayjs": "^1.11.10",

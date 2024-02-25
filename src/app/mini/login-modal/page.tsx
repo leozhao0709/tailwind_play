@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default async function LoginModal() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-rose-50">
-      <div className="relative flex shadow-xl">
+      <div className="relative flex rounded-lg shadow-xl">
         <button className="absolute right-4 top-6 flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 duration-200 hover:-translate-y-1">
           <Image src={close} alt="close" />
         </button>
@@ -42,12 +42,12 @@ export default async function LoginModal() {
           <p className="text-center text-sm font-thin text-gray-400">
             or login with
           </p>
-          <div className="my-4 flex flex-col space-y-4">
-            <button className="flex items-center justify-center space-x-4 rounded-lg border border-gray-300 py-2 duration-200 hover:-translate-y-0.5 hover:shadow-lg">
+          <div className="my-4 flex flex-col space-y-4 md:flex-row  md:space-x-4 md:space-y-0">
+            <button className="flex items-center justify-center space-x-4 rounded-lg border border-gray-300 py-2 duration-200 hover:-translate-y-0.5 hover:shadow-lg md:flex-1">
               <Image src={facebook} alt="facebook login" className="w-9 " />
               <span className="font-thin text-gray-500">Facebook</span>
             </button>
-            <button className="flex items-center justify-center space-x-4 rounded-lg border border-gray-300 py-2 duration-200 hover:-translate-y-0.5 hover:shadow-lg">
+            <button className="flex items-center justify-center space-x-4 rounded-lg border border-gray-300 py-2 duration-200 hover:-translate-y-0.5 hover:shadow-lg md:flex-1">
               <Image src={google} alt="google login" className="h-8 w-8" />
               <span className="font-thin text-gray-500">Google</span>
             </button>

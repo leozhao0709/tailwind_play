@@ -40,7 +40,7 @@ jobs:
 
       - name: Build project
         run: |
-          pnpm build
+          pnpm install && pnpm build
 
       - name: Publish
         uses: netlify/actions/cli@master

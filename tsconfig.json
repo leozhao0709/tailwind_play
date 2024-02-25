@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    // "composite": true,
+    "tsBuildInfoFile": "./dist/.tsbuildinfo",
+    "target": "esnext",
+    "jsx": "preserve",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    // "jsxImportSource": "@emotion/react",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@tests/*": ["tests/*"],
+      "@root/*": ["./*"]
+    },
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "removeComments": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "skipLibCheck": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      },
+      {
+        "name": "next"
+      }
+    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "noEmit": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "src",
+    "tests",
+    "e2e",
+    "build-common-config",
+    "build-tools",
+    "dist/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}

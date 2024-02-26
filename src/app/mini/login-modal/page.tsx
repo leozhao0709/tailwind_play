@@ -64,5 +64,5 @@ export const dynamic = 'auto';
 export const dynamicParams = true;
 export const revalidate = 60;
 export const fetchCache = 'auto';
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 export const preferredRegion = 'auto';

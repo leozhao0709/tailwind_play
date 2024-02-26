@@ -1,3 +1,2 @@
 [build]
-command = "#"    # This tells Netlify to skip the build
 publish = "dist" # Your build artifacts directory

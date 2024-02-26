@@ -1,7 +1,6 @@
-[build]
-publish = "dist" # Your build artifacts directory
+[[plugins]]
+package = "@netlify/plugin-nextjs"
 
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
+[build]
+command = "pnpm build"
+publish = "dist"       # Your build artifacts directory

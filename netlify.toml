@@ -2,5 +2,4 @@
 package = "@netlify/plugin-nextjs"
 
 [build]
-command = "next build"
-publish = "dist"       # Your build artifacts directory
+publish = "dist" # Your build artifacts directory

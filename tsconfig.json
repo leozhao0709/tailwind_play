@@ -1,6 +1,7 @@
 {
   "extends": "./build-common-config/tsconfig.json",
   "compilerOptions": {
+    "module": "ESNext",
     "tsBuildInfoFile": "./dist/.tsbuildinfo",
     "outDir": "dist",
     "baseUrl": ".",

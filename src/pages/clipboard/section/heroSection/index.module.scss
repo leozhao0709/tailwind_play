@@ -1,0 +1,9 @@
+.HeroSection {
+  background-image: url('../../images/bg-header-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (screen(md)) {
+    background-image: url('../../images/bg-header-desktop.png');
+  }
+}

@@ -18,5 +18,11 @@ module.exports = merge(commonConfig, {
     react: {
       version: 'detect',
     },
+    'import/resolver': {
+      alias: {
+        map: [['@', './src']],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
 });

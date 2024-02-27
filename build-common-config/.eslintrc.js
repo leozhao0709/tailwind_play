@@ -25,7 +25,7 @@ module.exports = {
     'import/no-unresolved': 0,
     'import/no-named-as-default-member': 0,
     'import/namespace': 0,
-    'import/no-cycle': [2, { ignoreExternal: true }],
+    'import/no-cycle': [2, { ignoreExternal: true, maxDepth: 10 }],
     '@typescript-eslint/strict-boolean-expressions': [
       1,
       { allowNumber: false, allowString: false },

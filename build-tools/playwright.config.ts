@@ -7,8 +7,8 @@ export default merge(commonConfig, {
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: 'pnpm build',
-    url: 'http://localhost:3000',
+    command: 'pnpm build & pnpm preview',
+    url: 'http://localhost:4173',
     reuseExistingServer: !process.env.CI,
     stdout: 'ignore',
     stderr: 'pipe',

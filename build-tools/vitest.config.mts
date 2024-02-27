@@ -9,6 +9,9 @@ export default mergeConfig(
       environment: 'jsdom',
       setupFiles: [path.join(__dirname, '..', 'tests', 'tests.setup.ts')],
       include: ['tests/**/*.{spec,test}.ts(x)?'],
+      coverage: {
+        include: ['src/**/*'],
+      },
     },
   }),
 );

@@ -1,22 +1,22 @@
 import React from 'react';
 import PricingCard, { PricingCardType } from './components/PricingCard';
 
-type PricingCardProps = React.HTMLAttributes<HTMLDivElement>;
+type PricingCardsProps = React.HTMLAttributes<HTMLDivElement>;
 
-const pricingCards: PricingCardType[] = [
+const allPricingCards: PricingCardType[] = [
   { storage: '100GB', pricing: 1.99, type: 'basic' },
   { storage: '200GB', pricing: 3.99, active: true, type: 'standard' },
   { storage: '2TB', pricing: 8.99, type: 'premium' },
 ];
 
-const PricingCards: React.FC<PricingCardProps> = ({
+const PricingCards: React.FC<PricingCardsProps> = ({
   className,
   ...restProps
-}: PricingCardProps) => {
+}: PricingCardsProps) => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-slate-800 text-white">
       <div className="my-8 flex flex-col items-center space-y-4 md:flex-row md:space-x-8 md:space-y-0">
-        {pricingCards.map((card) => (
+        {allPricingCards.map((card) => (
           <PricingCard key={card.storage} {...card} className="self-stretch" />
         ))}
       </div>

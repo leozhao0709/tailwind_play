@@ -1,11 +1,11 @@
 import React, { lazy } from 'react';
 import { Navigate, RouteObject } from 'react-router-dom';
 
-const EmailSubscribe = lazy(() => import('@/pages/min/email-subscribe'));
-const ImageGallery = lazy(() => import('@/pages/min/image-gallery'));
-const LoginModal = lazy(() => import('@/pages/min/login-modal'));
-const PricingCards = lazy(() => import('@/pages/min/pricing-cards'));
-const ProductModal = lazy(() => import('@/pages/min/product-modal'));
+const EmailSubscribe = lazy(() => import('@/pages/mini/emailSubscribe'));
+const ImageGallery = lazy(() => import('@/pages/mini/imageGallery'));
+const LoginModal = lazy(() => import('@/pages/mini/loginModal'));
+const PricingCards = lazy(() => import('@/pages/mini/pricingCards'));
+const ProductModal = lazy(() => import('@/pages/mini/productModal'));
 
 const subRoutes: RouteObject[] = [
   { index: true, element: <Navigate to="/mini" /> },

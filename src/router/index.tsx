@@ -1,9 +1,9 @@
 import React from 'react';
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 import rootRoute from './root';
 
-type RemixRouter = ReturnType<typeof createBrowserRouter>;
+type RemixRouter = ReturnType<typeof createHashRouter>;
 
-const router: RemixRouter = createBrowserRouter([rootRoute]);
+const router: RemixRouter = createHashRouter([rootRoute]);
 
 export default router;

@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-lato)', ...defaultTheme.fontFamily.sans],
-        roboto: ['var(--font-roboto)', ...defaultTheme.fontFamily.sans],
-        open_sans: ['var(--font-open_sans)', ...defaultTheme.fontFamily.sans],
+        sans: ['"Lato"', ...defaultTheme.fontFamily.sans],
+        roboto: ['"Roboto"', ...defaultTheme.fontFamily.sans],
+        open_sans: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
       },
     },
   },

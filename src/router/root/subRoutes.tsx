@@ -6,6 +6,7 @@ const ImageGallery = lazy(() => import('@/pages/mini/imageGallery'));
 const LoginModal = lazy(() => import('@/pages/mini/loginModal'));
 const PricingCards = lazy(() => import('@/pages/mini/pricingCards'));
 const ProductModal = lazy(() => import('@/pages/mini/productModal'));
+const Clipboard = lazy(() => import('@/pages/clipboard'));
 
 const subRoutes: RouteObject[] = [
   { index: true, element: <Navigate to="/mini" /> },
@@ -21,8 +22,8 @@ const subRoutes: RouteObject[] = [
     ],
   },
   {
-    path: 'something',
-    element: <div>Something</div>,
+    path: 'clipboard',
+    element: <Clipboard />,
   },
 ];
 

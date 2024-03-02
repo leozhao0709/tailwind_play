@@ -15,11 +15,15 @@ const DownloadSection: React.FC<DownloadSectionProps> = ({
       className="mt-32"
     >
       <div className="mt-10 flex w-full flex-col items-center justify-center space-y-8 md:flex-row md:space-x-4 md:space-y-0 ">
-        <Button className="self-stretch">
-          <HashLink to="./#hero">Download for iOS</HashLink>
+        <Button className="self-stretch p-0">
+          <HashLink to="./#hero" className="inline-block px-6 py-4">
+            Download for iOS
+          </HashLink>
         </Button>
-        <Button className="self-stretch bg-indigo-500">
-          <HashLink to="./#hero">Download for Mac</HashLink>
+        <Button className="self-stretch bg-indigo-500 p-0">
+          <HashLink className="inline-block px-6 py-4" to="./#hero">
+            Download for Mac
+          </HashLink>
         </Button>
       </div>
     </Section>

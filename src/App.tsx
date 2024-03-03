@@ -12,7 +12,6 @@ const App: React.FC = () => {
           <Outlet />
         </Suspense>
       </div>
-      <div>test</div>
     </div>
   );
 };

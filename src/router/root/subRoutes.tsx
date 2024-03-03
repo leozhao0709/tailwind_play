@@ -1,5 +1,6 @@
 import React, { lazy } from 'react';
 import { Navigate, RouteObject } from 'react-router-dom';
+import Loopstudios from '../../pages/loopstudios';
 
 const EmailSubscribe = lazy(() => import('@/pages/mini/emailSubscribe'));
 const ImageGallery = lazy(() => import('@/pages/mini/imageGallery'));
@@ -24,6 +25,10 @@ const subRoutes: RouteObject[] = [
   {
     path: 'clipboard',
     element: <Clipboard />,
+  },
+  {
+    path: 'loopstudios',
+    element: <Loopstudios />,
   },
 ];
 

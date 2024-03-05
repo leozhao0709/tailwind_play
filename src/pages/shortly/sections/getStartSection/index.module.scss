@@ -1,0 +1,9 @@
+.GetStartSection {
+  background-image: url('../../images/bg-boost-mobile.svg');
+
+  @apply bg-cover bg-no-repeat;
+
+  @media (screen(lg)) {
+    background-image: url('../../images/bg-boost-desktop.svg');
+  }
+}

@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "pnpm typeCheck && pnpm eslint && pnpm stylelint && pnpm vitest && pnpm test:e2e",
+    "test": "pnpm typeCheck && pnpm eslint && pnpm stylelint && pnpm vitest && pnpm build && pnpm test:e2e",
     "prepare": "husky",
     "build": "vite --config build-tools/vite.config.mts build",
     "build:clean": "rm -rf dist",

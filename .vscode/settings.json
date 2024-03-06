@@ -5,5 +5,6 @@
     "overrideConfigFile": "build-tools/.eslintrc.js"
   },
   "stylelint.configFile": "build-tools/.stylelint.config.ts",
-  "stylelint.validate": ["css", "scss"]
+  "stylelint.validate": ["css", "scss"],
+  "cSpell.words": ["Fylo"]
 }

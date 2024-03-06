@@ -1,13 +1,16 @@
 import React from 'react';
 import Section from '../../components/Section';
 import Button from '../../components/Button';
-import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
+import useScrollToAnchor from '@/hooks/useScrollToAnchor';
 
 type DownloadSectionProps = React.HTMLAttributes<HTMLDivElement>;
 
 const DownloadSection: React.FC<DownloadSectionProps> = ({
   className,
 }: DownloadSectionProps) => {
+  useScrollToAnchor();
+
   return (
     <Section
       title="Clipboard for iOS and MacOS"
@@ -16,14 +19,14 @@ const DownloadSection: React.FC<DownloadSectionProps> = ({
     >
       <div className="mt-10 flex w-full flex-col items-center justify-center space-y-8 md:flex-row md:space-x-4 md:space-y-0 ">
         <Button className="self-stretch p-0">
-          <HashLink to="./#hero" className="inline-block px-6 py-4">
+          <Link to="./#hero" className="inline-block px-6 py-4">
             Download for iOS
-          </HashLink>
+          </Link>
         </Button>
         <Button className="self-stretch bg-indigo-500 p-0">
-          <HashLink className="inline-block px-6 py-4" to="./#hero">
+          <Link className="inline-block px-6 py-4" to="./#hero">
             Download for Mac
-          </HashLink>
+          </Link>
         </Button>
       </div>
     </Section>

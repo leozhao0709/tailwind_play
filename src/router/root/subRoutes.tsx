@@ -3,6 +3,7 @@ import { Navigate, RouteObject } from 'react-router-dom';
 import Loopstudios from '@/pages/loopstudios';
 import Shortly from '@/pages/shortly';
 import Testimonial from '@/pages/testimonial';
+import Fylo from '../../pages/fylo';
 
 const EmailSubscribe = lazy(() => import('@/pages/mini/emailSubscribe'));
 const ImageGallery = lazy(() => import('@/pages/mini/imageGallery'));
@@ -39,6 +40,10 @@ const subRoutes: RouteObject[] = [
   {
     path: 'testimonial',
     element: <Testimonial />,
+  },
+  {
+    path: 'fylo',
+    element: <Fylo />,
   },
 ];
 
